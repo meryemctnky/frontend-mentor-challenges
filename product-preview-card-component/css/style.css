@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
+
+:root {
+  /* Primary */
+
+  --dark-cyan: hsl(158, 36%, 37%);
+  --cream: hsl(30, 38%, 92%);
+
+  /* Neutral */
+
+  --very-dark-blue: hsl(212, 21%, 14%);
+  --dark-grayish-blue: hsl(228, 12%, 48%);
+  --white: hsl(0, 0%, 100%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Fraunces', serif;
+}
+
+p {
+  font-size: 14px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--cream);
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  background-color: var(--white);
+  border-radius: 0.375rem;
+  border: 0;
+  min-width: 40rem;
+  overflow: hidden;
+}
+
+.card-image {
+  object-fit: cover;
+  height: 30rem;
+  max-height: 30rem;
+  width: 100%;
+  border-top-left-radius: 0.375rem;
+  border-top-right-radius: 0rem;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0.375rem;
+}
+
+.card-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+.category {
+  color: var(--dark-grayish-blue);
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  margin-bottom: 1.5rem;
+}
+
+.product-title {
+  width: 14rem;
+  margin-bottom: 1.5rem;
+  color: var(--very-dark-blue);
+}
+
+.product-desc {
+  color: var(--dark-grayish-blue);
+  width: 14rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+  line-height: 1.4rem;
+}
+
+.prices {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.prices h5 {
+  font-size: 2rem;
+  color: var(--dark-cyan);
+}
+.prices p {
+  color: var(--dark-grayish-blue);
+  text-decoration: line-through;
+  margin-left: 1rem;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.7rem;
+  background-color: var(--dark-cyan);
+  border: 0;
+  border-radius: 0.5rem;
+  color: var(--white);
+}
+
+.btn span {
+  margin-left: 0.5rem;
+  font-size: 1rem;
+}
+.btn:hover {
+  background-color: hsl(158, 36%, 17%);
+}
+
+@media screen and (max-width: 650px) {
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: 0;
+    min-width: 30rem;
+  }
+  .card-content {
+    width: 25rem;
+    margin: 0 1.7rem;
+  }
+  .product-title,
+  .product-desc {
+    width: 100%;
+  }
+  .card-image {
+    width: 33rem;
+    border-radius: 0;
+  }
+  .btn {
+    width: 25rem;
+  }
+}
