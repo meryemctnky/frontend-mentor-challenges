@@ -2,6 +2,25 @@
 
 This repository contains front-end coding challenges from [Frontend Mentor](https://www.frontendmentor.io) help me improve my coding skills by building realistic projects.
 
+<style>
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td, th {
+    border: 2px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+.image-cell {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 200px; 
+    height: 200px; 
+</style>
 <div>
     <table>
         <tr>
@@ -54,26 +73,3 @@ This repository contains front-end coding challenges from [Frontend Mentor](http
         </tr>
     </table>
 </div>
-
-<style>
-table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-td, th {
-    border: 2px solid #dddddd;
-    text-align: left;
-    padding: 8px;
-}
-
-
-.image-cell {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 200px; /* Hücre boyutunu ayarlayabilirsiniz */
-    height: 200px; /* Hücre boyutunu ayarlayabilirsiniz */
-}
-
-</style>
