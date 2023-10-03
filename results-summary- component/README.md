@@ -14,6 +14,7 @@ Users should be able to:
 
 ### Screenshot
 
+<<<<<<< HEAD
 <div class="resim-container">
   <img id="desktop" src="assets/screenshot.png" alt="results summary component screenshot" height= "400" >
   <img id="mobile" src="design/mobile-design.jpg" alt="results summary component mobile" height= "400">
@@ -34,6 +35,9 @@ Users should be able to:
   object-fit:contain;
 }
 </style>
+=======
+![results summary component](./assets/screenshot.png)
+>>>>>>> e451a7a3291b1e89f82d98eca7fb18b10873a6b7
 
 ### Links
 
