@@ -16,6 +16,7 @@
 
 body {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
@@ -64,4 +65,15 @@ body {
   color: var(--grayish-blue);
   text-align: center;
   margin-bottom: 1rem;
+}
+
+footer {
+  margin-top: 2rem;
+}
+.attribution {
+  font-size: 1rem;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }
