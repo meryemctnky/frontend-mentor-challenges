@@ -36,6 +36,7 @@ p {
 
 body {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
@@ -127,7 +128,17 @@ body {
   background-color: hsl(158, 36%, 17%);
 }
 
-@media screen and (max-width: 650px) {
+.attribution {
+  margin-top: 2rem;
+  font-size: 1em;
+  text-align: center;
+  color: ar(--dark-grayish-blue);
+}
+.attribution a {
+  color: var(--dark-cyan);
+}
+
+@media (max-width: 650px) {
   .card {
     display: flex;
     flex-direction: column;
