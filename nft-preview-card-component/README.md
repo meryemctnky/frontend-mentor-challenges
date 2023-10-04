@@ -1,6 +1,6 @@
-# Frontend Mentor - QR code component
+# Frontend Mentor - NFT preview card component
 
-This is a solution to the [QR code component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H).
+This is a solution to the [NFT preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U).
 
 ## Overview
 
@@ -14,25 +14,9 @@ Users should be able to:
 ### Screenshot
 
 <div class="resim-container">
-  <img id="desktop" src="assets/screenshot.png" alt="QR code component screenshot" height= "400" >
-  <img id="mobile" src="design/mobile-design.jpg" alt="QR code component mobile" height= "400">
+  <img src="assets/screenshot.png" alt="QR code component screenshot" height="400">
+  <img src="assets/screenshot-mobile.png" alt="QR code component mobile" height="400">
 </div>
-
-<style>
-.resim-container {
-  display: flex; 
-  gap: 30px;
-}
-
-.resim-container #desktop {
-  width: 50%; 
-  object-fit: cover; 
-}
-.resim-container #mobile {
-  width: 50%; 
-  object-fit:contain;
-}
-</style>
 
 ### Links
 
@@ -52,17 +36,22 @@ Users should be able to:
 
 **1. HTML Structure:** I learned how to create the basic structure of an HTML document, including setting the document type, defining the language, and adding metadata like character encoding and viewport settings.
 
-**2. CSS Styling:** I gained experience in applying CSS styles to HTML elements to create an attractive and responsive product card. This includes defining custom CSS variables for consistent color management.
+**2. Favicon:** I learned how to add a favicon to the webpage, which is a small icon that appears in the browser tab. This enhances the branding and recognition of the website.
 
-**3. Use of CSS Variables:** I utilized CSS variables to store and manage color values, making it easier to maintain a consistent color scheme throughout the project.
+**3. External Fonts:** I gained experience in importing and applying external fonts from Google Fonts using the <link> tag in the HTML head, allowing for custom typography in the project.
 
-**4. CSS Flexbox:** I learned how to use CSS flexbox to create a flexible layout for the card, allowing for dynamic content arrangement and alignment.
+**4. Responsive Design:** I learned how to create a responsive design that adapts to various screen sizes and devices, ensuring a consistent and user-friendly experience for users.
 
-**5. Typography:** I utilized custom fonts for headings and adjusted font sizes and styles to enhance the readability and visual appeal of the product card.
+**5. CSS Styling:** I developed skills in applying CSS styles to HTML elements to create an attractive and responsive NFT preview card. This includes defining custom CSS variables for consistent color management.
 
-**6. Layout and Spacing:** I employed CSS properties to control the layout of the elements within the card, including spacing, margins, and padding for achieving a visually pleasing design.
+**6. Hover Effects:** I implemented hover effects using CSS to enhance interactivity, such as changing colors and opacity when hovering over the card's image and title.
 
-Overall, this project helped me develop skills in HTML structure, CSS styling and the use of external fonts, enabling me to create an appealing and QR code component for the web.
+**7. Typography:** I adjusted font sizes, weights, and colors to improve readability and visual appeal, utilizing custom fonts for headings.
+
+**8. Layout and Spacing:** I applied CSS properties to control the layout of elements within the card, including padding, margins, and spacing, to achieve a visually pleasing design.
+
+**9. Card Shadow and Border Radius:** I utilized CSS to add shadow and rounded corners to the card, giving it a three-dimensional appearance and a softer, modern look.
+**10. Interactive Elements:** I added interactive elements to the card, such as clickable titles and avatars, with color changes on hover to provide feedback to users.
 
 ## Author
 
