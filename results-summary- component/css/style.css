@@ -26,6 +26,7 @@
 
 body {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
@@ -172,6 +173,17 @@ body {
 
 .btn:hover {
   background: linear-gradient(var(--light-slate-blue), var(--light-royal-blue));
+}
+
+footer {
+  margin-top: 2rem;
+}
+.attribution {
+  font-size: 1rem;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }
 
 @media screen and (max-width: 650px) {
