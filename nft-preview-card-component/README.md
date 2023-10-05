@@ -14,8 +14,8 @@ Users should be able to:
 ### Screenshot
 
 <div class="resim-container">
-  <img src="assets/screenshot.png" alt="QR code component screenshot" height="400">
-  <img src="assets/screenshot-mobile.png" alt="QR code component mobile" height="400">
+  <img src="assets/screenshot.png" alt="NFT preview card component screenshot" height="400">
+  <img src="assets/screenshot-mobile.png" alt="NFT preview card component mobile" height="400">
 </div>
 
 ### Links
