@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+:root {
+  /* Primary */
+  --cyan: hsl(179, 62%, 43%);
+  --bright-yellow: hsl(71, 73%, 54%);
+
+  /* Neutral */
+  --Light-Gray: hsl(204, 43%, 93%);
+  --Grayish-Blue: hsl(218, 22%, 67%);
+  --White: hsl(0, 0%, 100%);
+}
+
+* {
+  font-family: 'Karla', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  min-height: 100vh;
+  min-width: 100vw;
+  background-color: var(--Light-Gray);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  max-width: 25rem;
+  height: auto;
+  margin-top: 3rem;
+  box-shadow: var(--Grayish-Blue) 0px 2px 8px 0px;
+  border-radius: 0.8rem;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.col {
+  background-color: #f0f0f0;
+  padding: 1.5rem;
+  text-align: start;
+}
+
+.cyan {
+  background-color: var(--cyan);
+}
+
+.aqua {
+  background-color: hsl(179, 62%, 53%);
+  border-bottom-right-radius: 0.8rem;
+  border-bottom-left-radius: 0.8rem;
+}
+
+.white {
+  background-color: var(--White);
+  border-top-right-radius: 0.8rem;
+  border-top-left-radius: 0.8rem;
+}
+
+h1 {
+  color: var(--cyan);
+  font-size: 1.4em;
+  font-weight: 700;
+}
+
+h2 {
+  color: var(--bright-yellow);
+  font-size: 1.2em;
+  font-weight: 700;
+}
+
+.desc {
+  color: var(--Grayish-Blue);
+  line-height: 2;
+}
+
+h3 {
+  margin: 0;
+}
+
+.col-2,
+.col-3 {
+  color: var(--Light-Gray);
+}
+
+.price {
+  padding: 0;
+  margin: 0;
+  margin-top: 1rem;
+  font-size: 2em;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+}
+
+.price > span {
+  font-weight: 400;
+  font-size: 0.5em;
+  margin-left: 0.5rem;
+}
+
+.col-2 p {
+  margin: 0.5rem 0;
+}
+
+button {
+  margin: 1rem 0;
+  padding: 1rem;
+  width: 100%;
+  background-color: var(--bright-yellow);
+  color: var(--Light-Gray);
+  font-size: 1.2em;
+  font-weight: 700;
+  border: 0;
+  border-radius: 0.3rem;
+  box-shadow: hsl(218, 22%, 55%) 0px 2px 8px 0px;
+}
+
+button:hover {
+  color: var(--bright-yellow);
+  background-color: var(--Light-Gray);
+}
+
+ul {
+  padding: 0;
+  margin: 1rem 0;
+  list-style: none;
+  line-height: 1.5;
+}
+.attribution {
+  margin-top: 2rem;
+  font-size: 1em;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 768px) {
+  .card {
+    max-width: 40rem;
+    height: auto;
+  }
+  .row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .row-1 {
+    grid-template-columns: 1fr;
+  }
+  .col {
+    padding: 2rem;
+  }
+  h1 {
+    font-size: 1.8em;
+  }
+  .cyan {
+    background-color: var(--cyan);
+    border-bottom-left-radius: 0.8rem;
+  }
+
+  .aqua {
+    background-color: hsl(179, 62%, 53%);
+    border-bottom-right-radius: 0.8rem;
+    border-bottom-left-radius: 0;
+  }
+}
