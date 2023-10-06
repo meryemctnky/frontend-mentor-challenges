@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+:root {
+  /************** COLORS **************/
+
+  /* Primary */
+  --Red: hsl(0, 78%, 62%);
+  --Cyan: hsl(180, 62%, 55%);
+  --Orange: hsl(34, 97%, 64%);
+  --Blue: hsl(212, 86%, 64%);
+
+  /* Neutral */
+  --Very-Dark-Blue: hsl(234, 12%, 34%);
+  --Grayish-Blue: hsl(229, 6%, 66%);
+  --Very-Light-Gray: hsl(0, 0%, 98%);
+
+  /************** TYPOGRAFI **************/
+  --font-body: 'Poppins', sans-serif;
+  --font-light: 200;
+  --font-normal: 400;
+  --font-bold: 600;
+}
+
+.cyan {
+  border-top: 3px solid var(--Cyan);
+  order: 1;
+}
+.red {
+  border-top: 3px solid var(--Red);
+  order: 2;
+}
+.orange {
+  border-top: 3px solid var(--Orange);
+  order: 3;
+}
+.blue {
+  border-top: 3px solid var(--Blue);
+  order: 4;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: var(--font-body);
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--Very-Light-Gray);
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+header {
+  text-align: center;
+  margin: 3rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+header > h1 {
+  font-size: 1.5rem;
+  font-weight: var(--font-light);
+  color: var(--Very-Dark-Blue);
+}
+
+header > h1 > span {
+  font-weight: var(--font-bold);
+}
+
+header > p {
+  color: var(--Grayish-Blue);
+  line-height: 1.8;
+  margin-top: 1rem;
+}
+
+.card {
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  box-shadow: hsl(234, 12%, 74%) 0px 2px 8px 0px;
+  overflow: hidden;
+  max-width: 20rem;
+}
+
+section > h2 {
+  font-size: 1.2rem;
+  font-weight: var(--font-bold);
+  color: var(--Very-Dark-Blue);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 1.7rem;
+}
+
+section > p {
+  color: var(--Grayish-Blue);
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+}
+
+section > img {
+  margin-top: 2rem;
+  float: right;
+}
+
+.attribution {
+  font-size: 16px;
+  text-align: center;
+  margin-top: 3rem;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (min-width: 768px) {
+  header > h1 {
+    font-size: 2rem;
+  }
+  header > p {
+    width: 100%;
+    max-width: 30rem;
+  }
+
+  main {
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    max-width: 70%;
+  }
+
+  .down {
+    position: relative;
+    top: 150px;
+  }
+}
