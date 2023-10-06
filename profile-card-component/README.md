@@ -1,4 +1,4 @@
-# Frontend Mentor - Product preview card component
+# Frontend Mentor - Profile card component
 
 This is a solution to the [Profile card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/profile-card-component-cfArpWshJ).
 
@@ -11,13 +11,13 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 ### Screenshot
 
 <div class="resim-container">
-  <img src="assets/screenshot.png" alt="Product preview card screenshot" height= "400" >
-  <img src="design/mobile-design.jpg" alt="Product preview card mobile" height= "400">
+  <img src="assets/screenshot.png" alt="Profile card component screenshot" height= "300" >
+  <img src="design/mobile-design.jpg" alt="Profile card component mobile" height= "300">
 </div>
 
 ### Links
 
-<!-- - Live Site URL: [Add live site URL here](https://your-live-site-url.com) -->
+- Live Site URL: [https://frontend-mentor-challenges-livid-kappa.vercel.app/](https://frontend-mentor-challenges-livid-kappa.vercel.app/)
 
 ## My process
 
