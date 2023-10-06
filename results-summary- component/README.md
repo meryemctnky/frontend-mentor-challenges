@@ -15,13 +15,13 @@ Users should be able to:
 ### Screenshot
 
 <div class="resim-container">
-  <img src="assets/screenshot.png" alt="results summary component screenshot" height= "400" >
-  <img src="design/mobile-design.jpg" alt="results summary component mobile" height= "400">
+  <img src="assets/screenshot.png" alt="results summary component screenshot" height= "300" >
+  <img src="design/mobile-design.jpg" alt="results summary component mobile" height= "300">
 </div>
 
 ### Links
 
-<!-- - Live Site URL: [Add live site URL here](https://your-live-site-url.com) -->
+- Live Site URL: [frontend-mentor-challenges-uf5c.vercel.app](frontend-mentor-challenges-uf5c.vercel.app)
 
 ## My process
 
