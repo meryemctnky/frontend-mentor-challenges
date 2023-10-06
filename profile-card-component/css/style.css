@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root {
+  /*Primary */
+
+  --Dark-cyan: hsl(185, 75%, 39%);
+  --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+  --Dark-grayish-blue: hsl(227, 10%, 46%);
+
+  /*Neutral */
+
+  --Dark-gray: hsl(0, 0%, 59%);
+}
+
+* {
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 18px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: url(/assets/bg-pattern-bottom.svg) bottom -600px right -150px no-repeat,
+    url(/assets/bg-pattern-top.svg) top -500px left -200px no-repeat;
+  background-color: var(--Dark-cyan);
+}
+
+.card {
+  width: 25rem;
+  height: 25rem;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 0.8rem;
+  box-shadow: var(--Dark-grayish-blue) 0px 7px 20px 0px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.card-img {
+  width: 100%;
+  object-fit: cover;
+  position: relative;
+  border-radius: 0.8rem 0.8rem 0 0;
+}
+
+.profile-img {
+  position: absolute;
+  border: 0.3rem solid hsl(0, 0%, 100%);
+  border-radius: 3rem;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 39%;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4rem;
+}
+
+.profile-name {
+  color: var(--Very-dark-desaturated-blue);
+  margin: 0;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+.age {
+  color: var(--Dark-grayish-blue);
+  margin-left: 0.3rem;
+  font-weight: normal;
+  font-size: 1.3rem;
+}
+
+.city {
+  color: var(--Dark-grayish-blue);
+  font-size: 1.1rem;
+  text-align: center;
+  margin-top: 0.5em;
+  padding: 0;
+}
+
+.card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  border-top: 0.01rem solid hsl(0, 0%, 80%);
+  padding-top: 1rem;
+}
+
+.card-footer b {
+  font-size: 1.5rem;
+  color: var(--Very-dark-desaturated-blue);
+}
+
+.card-footer p {
+  color: var(--Dark-gray);
+  margin: 0.3rem 0;
+  letter-spacing: 0.1rem;
+}
+
+.attribution {
+  margin-top: 2rem;
+  font-size: 1em;
+  text-align: center;
+  color: var(--Very-dark-desaturated-blue);
+}
+.attribution a {
+  color: hsl(0, 0%, 100%);
+}
+
+@media screen and (max-width: 650px) {
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .profile-img {
+    top: 30%;
+  }
+}
