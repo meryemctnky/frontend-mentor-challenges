@@ -11,7 +11,7 @@ This repository contains front-end coding challenges from [Frontend Mentor](http
 | **Technologies:** HTML, CSS, JS | | **Difficulty:** ⭐ |
 | [Interactive Rating Component](/interactive-rating-component/) | [FAQ Accordion Card](/faq-accordion-card/) | [Article Preview Component](/article-preview-component/) |
 | ![Interactive Rating Component](./assets/interactive-rating-component-design.jpg) | ![FAQ Accordion Card](./assets/FAQ-accordion-card-design.jpg) | ![Article Preview Component](./assets/article-preview-component.jpg) |
-| Base Apparel Coming Soon Page | Resim 2 | Resim 3 |
+| [Base Apparel Coming Soon Page](/base-apparel-coming-soon/) | Resim 2 | Resim 3 |
 | ![Base Apparel Coming Soon Page](./assets/base-apparel-coming-soon.jpg) | ![Resim 2](resim2.jpg) | ![Resim 3](resim3.jpg) |
 | **Technologies:** HTML, CSS | | **Difficulty:** ⭐⭐ |
 | [Testimonials Grid Section](/testimonials-grid-section/) | [Fylo Data Storage Component](/fylo-data-storage-component/) | [Chat App CSS Illustration ](/chat-app-css-illustration/) |
