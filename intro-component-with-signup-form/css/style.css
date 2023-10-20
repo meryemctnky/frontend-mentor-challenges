@@ -104,7 +104,11 @@ body {
 }
 
 .form-control {
-  display: block;
+  margin-bottom: 0.8rem;
+}
+
+.form-control input {
+  display: inline-block;
   width: 100%;
   padding: 0.7rem;
   font-size: 0.8rem;
@@ -116,31 +120,33 @@ body {
   border: 1px solid #ced4da;
   border-radius: 0.25rem;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  position: relative;
 }
 
-.form-control::placeholder {
+.form-control input::placeholder {
   font-weight: bold;
   color: hsl(249, 10%, 46%);
   font-size: 0.9em;
 }
 
+.form-control input:focus {
+  outline: 0;
+}
+
 .error-message {
-  /* display: none; */
+  display: none;
   float: inline-end;
   font-size: 0.6rem;
   font-style: italic;
   font-weight: 600;
   color: var(--color-red);
-  margin: 0.4rem 0 0.8rem 0;
+  margin-top: 0.4rem;
 }
 
 .error-icon {
-  /* display: none; */
-  position: absolute;
-  right: 5px;
-  top: 50%;
-  transform: translateY(-50%);
+  display: none;
+  position: relative;
+  top: -1.87rem;
+  left: 16rem;
 }
 
 .btn-success {
@@ -173,6 +179,7 @@ body {
 footer {
   text-align: center;
   color: var(--color-dark-blue);
+  margin: 1rem 0;
 }
 
 footer > a {
@@ -211,5 +218,8 @@ footer > a {
   }
   .form {
     width: 82%;
+  }
+  .error-icon {
+    left: 24rem;
   }
 }
