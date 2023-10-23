@@ -24,7 +24,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [https://ping-coming-soon-page-0.netlify.app/](https://ping-coming-soon-page-0.netlify.app/)
+- Live Site URL: [https://newsletter-signup-with-successmessage.netlify.app/](https://newsletter-signup-with-successmessage.netlify.app/)
 
 ## My process
 
