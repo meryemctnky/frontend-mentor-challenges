@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Frontend Mentor | Age calculator app</title>
+  </head>
+  <body>
+    <main class="card">
+      <form id="ageForm">
+        <div class="form-control">
+          <label for="birthDay" class="form-label">Day</label>
+          <input type="text" id="birthDay" placeholder="DD" />
+          <span id="dayErrorMessage" class="errorMessage">Must be a valid day</span>
+        </div>
+        <div class="form-control">
+          <label for="birthMonth" class="form-label">Month</label>
+          <input type="text" id="birthMonth" placeholder="MM" />
+          <span id="monthErrorMessage" class="errorMessage">Must be a valid month</span>
+        </div>
+        <div class="form-control">
+          <label for="birthYear" class="form-label">Year</label>
+          <input type="text" id="birthYear" placeholder="YYYY" />
+          <span id="yearErrorMessage" class="errorMessage">Must be in the past</span>
+        </div>
+        <button type="submit" id="calculateBtn">
+          <img src="assets/images/icon-arrow.svg" alt="Arrow icon" />
+        </button>
+      </form>
+      <hr />
+      <div class="card-body">
+        <h5><span id="years">--</span> years</h5>
+        <h5><span id="months">--</span> months</h5>
+        <h5><span id="days">--</span> days</h5>
+      </div>
+    </main>
+
+    <footer class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by
+      <a href="#">Your Name Here</a>.
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>
