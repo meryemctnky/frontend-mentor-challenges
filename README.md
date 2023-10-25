@@ -6,8 +6,8 @@ This repository contains front-end coding challenges from [Frontend Mentor](http
 | | | |
 | --------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------- |
 | **Technologies:** HTML, CSS, JS | | **Difficulty:** ⭐⭐ |
-| [Newsletter Sign-up Form](/newsletter-sign-up-with-success-message/) | Stats Preview Card Component | Resim 6 |
-| ![Newsletter Sign-up Form](./assets/newsletter-sign-up-with-success-message.jpg) | ![Stats Preview Card Component](./assets/stats-preview-card-component.jpg) | ![Resim Açıklama 6](link_to_image6) |
+| [Newsletter Sign-up Form](/newsletter-sign-up-with-success-message/) | [Age Calculator App](/age-calculator-app/) | Resim 6 |
+| ![Newsletter Sign-up Form](./assets/newsletter-sign-up-with-success-message.jpg) | ![Age Calculator App](./assets/age-calculator-app.jpg) | ![Resim Açıklama 6](link_to_image6) |
 | **Technologies:** HTML, CSS, JS | | **Difficulty:** ⭐ |
 | [Interactive Rating Component](/interactive-rating-component/) | [FAQ Accordion Card](/faq-accordion-card/) | [Article Preview Component](/article-preview-component/) |
 | ![Interactive Rating Component](./assets/interactive-rating-component-design.jpg) | ![FAQ Accordion Card](./assets/FAQ-accordion-card-design.jpg) | ![Article Preview Component](./assets/article-preview-component.jpg) |
