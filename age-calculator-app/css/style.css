@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap');
+
+:root {
+  /* Primary Colors */
+  --color-purple: hsl(259, 100%, 65%);
+  --color-light-red: hsl(0, 100%, 67%);
+
+  /* Neutral Colors */
+  --color-white: hsl(0, 0%, 100%);
+  --color-off-white: hsl(0, 0%, 94%);
+  --color-light-grey: hsl(0, 0%, 86%);
+  --color-smokey-grey: hsl(0, 1%, 44%);
+  --color-off-black: hsl(0, 0%, 8%);
+}
+
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: var(--color-off-white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100vw;
+}
+
+.card {
+  width: 100%;
+  height: auto;
+  background-color: var(--color-white);
+  border-radius: 10px 10px 120px 10px;
+  padding: 2.2rem;
+}
+
+form {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+form .form-control {
+  display: flex;
+  flex-direction: column;
+  width: calc(30% - 1rem);
+}
+
+form label {
+  font-size: 0.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  margin-bottom: 0.4rem;
+  color: var(--color-smokey-grey);
+}
+
+form label.light-red {
+  color: var(--color-light-red);
+}
+
+form input {
+  padding: 0.6rem;
+  font-size: 1.4rem;
+  border-radius: 0.3rem;
+  border: 1px solid var(--color-light-grey);
+}
+
+form input:hover {
+  border: 1px solid var(--color-purple);
+}
+
+form input.error {
+  border: 1px solid var(--color-light-red);
+}
+
+form .errorMessage {
+  color: var(--color-light-red);
+  font-weight: 400;
+  font-style: italic;
+  font-size: 0.6rem;
+  margin-top: 0.4rem;
+  display: none;
+}
+
+form button {
+  background-color: var(--color-purple);
+  border: 0;
+  padding: 0.8rem;
+  border-radius: 50%;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: absolute;
+  top: 14rem;
+  left: 40%;
+  margin: 1rem 0;
+}
+
+form button img {
+  width: 1.7rem;
+  height: 1.7rem;
+}
+
+form button:hover {
+  background-color: var(--color-off-black);
+}
+
+hr {
+  color: var(--color-light-grey);
+  background-color: var(--color-light-grey);
+  border: none;
+  height: 1px;
+}
+
+.card-body {
+  font-size: 4rem;
+  font-style: italic;
+  margin-top: 2rem;
+}
+
+.card-body h5 {
+  margin: 0;
+  padding: 0;
+  font-weight: 900;
+}
+
+.card-body span {
+  color: var(--color-purple);
+}
+
+footer {
+  margin-top: 2rem;
+  color: var(--color-off-black);
+  font-size: 0.7rem;
+}
+
+footer a {
+  color: var(--color-purple);
+}
+
+@media screen and (min-width: 768px) {
+  .card {
+    width: 520px;
+    height: 371px;
+  }
+  form {
+    margin-bottom: 1.5rem;
+  }
+  form .form-control {
+    width: 7.2rem;
+  }
+
+  form button {
+    top: 14rem;
+    left: 65%;
+    margin: 0;
+  }
+  .card-body {
+    margin-top: 0;
+  }
+}
