@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Frontend Mentor | News homepage</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navbar">
+        <a class="logo" href="#">
+          <img src="./assets/images/logo.svg" alt="logo" />
+        </a>
+        <button type="button" id="toggleButton">
+          <span class="navbar-toggler-icon"><img src="assets/images/icon-menu.svg" alt="Menu icon" /></span>
+        </button>
+        <div class="offcanvas active" id="offcanvas" tabindex="-1">
+          <div class="offcanvas-header">
+            <button type="button" id="closeButton">
+              <img src="assets/images/icon-menu-close.svg" alt="Close icon" />
+            </button>
+          </div>
+          <div class="offcanvas-body">
+            <div class="navbar-nav">
+              <a class="nav-link" href="#">Home</a>
+              <a class="nav-link" href="#">New</a>
+              <a class="nav-link" href="#">Popular</a>
+              <a class="nav-link" href="#">Trending</a>
+              <a class="nav-link" href="#">Categories</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <main>
+        <section class="main-content">
+          <article class="image-column">
+            <picture>
+              <source media="(min-width: 768px)" srcset="assets/images/image-web-3-desktop.jpg" />
+              <img src="assets/images/image-web-3-mobile.jpg" alt="image-web-3-mobile" />
+            </picture>
+          </article>
+
+          <article class="news-column">
+            <h1>New</h1>
+            <div class="single-new">
+              <h5>Hydrogen VS Electric Cars</h5>
+              <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+            </div>
+            <div class="single-new">
+              <h5>The Downsides of AI Artistry</h5>
+              <p>What are the possible adverse effects of on-demand AI image generation?</p>
+            </div>
+            <div class="single-new">
+              <h5>Is VC Funding Drying Up?</h5>
+              <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+            </div>
+          </article>
+
+          <article class="title-column">
+            <h1>The Bright Future of Web 3.0?</h1>
+          </article>
+
+          <article class="description-column">
+            <p>
+              We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people.
+              But is it really fulfilling its promise?
+            </p>
+            <button type="button" class="">Read more</button>
+          </article>
+        </section>
+
+        <section class="posts-content">
+          <artcile class="single-post">
+            <div class="post-img">
+              <img src="./assets/images/image-retro-pcs.jpg" alt="Retro" />
+            </div>
+            <div class="post-details">
+              <h2>01</h2>
+              <h6>Reviving Retro PCs</h6>
+              <p>What happens when old PCs are given modern upgrades?</p>
+            </div>
+          </artcile>
+          <article class="single-post">
+            <div class="post-img">
+              <img src="./assets/images/image-top-laptops.jpg" alt="Laptops" />
+            </div>
+            <div class="post-details">
+              <h2>02</h2>
+              <h6>Top 10 Laptops of 2022</h6>
+              <p>Our best picks for various needs and budgets</p>
+            </div>
+          </article>
+          <article class="single-post">
+            <div class="post-img">
+              <img src="./assets/images/image-gaming-growth.jpg" alt="Gaming growth" />
+            </div>
+            <div class="post-details">
+              <h2>03</h2>
+              <h6>The Growth of Gaming</h6>
+              <p>How the pandemic has sparked fresh opportunities.</p>
+            </div>
+          </article>
+        </section>
+      </main>
+      <footer class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by
+        <a href="https://github.com/meryemctnky">Meryem Çetinkaya</a>.
+      </footer>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>
