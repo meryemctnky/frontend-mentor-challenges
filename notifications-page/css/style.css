@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;800&display=swap');
+
+:root {
+  /* COLORS */
+
+  /* Primary */
+  --red: hsl(1, 90%, 64%);
+  --blue: hsl(219, 85%, 26%);
+
+  /* Neutral */
+  --neutral-white: hsl(0, 0%, 100%);
+  --neutral-very-light-grayish-blue: hsl(210, 60%, 98%);
+  --neutral-light-grayish-blue-1: hsl(211, 68%, 94%);
+  --neutral-light-grayish-blue-2: hsl(205, 33%, 90%);
+  --neutral-grayish-blue: hsl(219, 14%, 63%);
+  --neutral-dark-grayish-blue: hsl(219, 12%, 42%);
+  --neutral-very-dark-blue: hsl(224, 21%, 14%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+body {
+  font-size: 16px;
+  max-width: 100%;
+  min-height: 100vh;
+  background-color: var(--neutral-very-light-grayish-blue);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  max-width: 100%;
+  height: auto;
+  margin: 0;
+  background-color: var(--neutral-white);
+  padding: 0.9rem 1.4rem;
+  border-radius: 0.3rem;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+header .title {
+  display: flex;
+  align-items: end;
+  color: var(--neutral-very-dark-blue);
+}
+
+header .title h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 1.5rem;
+}
+
+header #countBtn {
+  background-color: var(--blue);
+  color: var(--neutral-white);
+  border: 0;
+  padding: 0.1rem 0.6rem;
+  border-radius: 0.3rem;
+  margin-left: 0.5rem;
+  margin-bottom: 0.25em;
+  font-weight: 600;
+}
+
+header #allReadBtn {
+  border: 0;
+  background: none;
+  cursor: pointer;
+  color: var(--neutral-dark-grayish-blue);
+}
+
+header #allReadBtn:hover {
+  color: var(--blue);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.4rem;
+}
+
+main .notification-item {
+  padding: 0.9rem;
+  display: flex;
+  align-items: start;
+}
+
+main .notification-item.unread {
+  background-color: var(--neutral-light-grayish-blue-1);
+}
+
+main .notification-item img {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+main .notification-item .notification-content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.2rem;
+  margin-left: 1rem;
+}
+
+main .notification-item .notification-content .desc {
+  font-size: 0.8rem;
+  color: var(--neutral-dark-grayish-blue);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+main .unread .notification-content .desc::after {
+  content: '';
+  display: inline-block;
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: var(--red);
+  border-radius: 50%;
+  margin-left: 0.4rem;
+}
+
+.notification-content .desc > strong {
+  color: var(--neutral-very-dark-blue);
+}
+.notification-content .desc > strong:hover {
+  color: var(--blue);
+}
+.notification-content .desc a {
+  color: var(--neutral-very-dark-blue);
+  font-weight: 800;
+  text-decoration: none;
+}
+.notification-content .desc a:hover {
+  color: var(--blue);
+}
+
+.notification-content .notification-time {
+  color: var(--neutral-grayish-blue);
+  font-size: 0.8rem;
+}
+
+.notification-content #message {
+  width: 96%;
+  padding: 0.8rem;
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--neutral-dark-grayish-blue);
+  border: 1px solid var(--neutral-light-grayish-blue-2);
+  border-radius: 0.3rem;
+  text-decoration: none;
+}
+
+.notification-content #message:hover {
+  background-color: var(--neutral-light-grayish-blue-1);
+}
+
+.notification-item #chessImg {
+  margin-left: 0.5rem;
+}
+
+footer {
+  font-size: 0.8rem;
+  text-align: center;
+  margin: 0.5rem 0;
+  color: var(--dark-grayish-blue);
+}
+
+footer a {
+  color: var(--blue);
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 600px;
+    height: auto;
+    margin: auto 1rem;
+  }
+  .notification-item #chessImg {
+    margin-left: 8.5rem;
+  }
+  footer {
+    margin: 1.5rem 0;
+  }
+}
