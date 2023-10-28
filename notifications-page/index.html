@@ -7,5 +7,86 @@
     <link rel="stylesheet" href="css/style.css" />
     <title>Frontend Mentor | Notifications page</title>
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <header>
+        <div class="title">
+          <h1>Notifications</h1>
+          <div>
+            <button type="button" id="countBtn">3</button>
+          </div>
+        </div>
+        <button id="allReadBtn">Mark all as read</button>
+      </header>
+      <main class="notification-list">
+        <section class="notification-item unread">
+          <img src="assets/images/avatar-mark-webber.webp" alt="Profile image" />
+          <div class="notification-content">
+            <p class="desc">
+              <strong>Mark Webber </strong>reacted to your recent post
+              <a href="https://github.com/meryemctnky">My first tournament today!</a>
+            </p>
+            <span class="notification-time">1m ago</span>
+          </div>
+        </section>
+        <section class="notification-item unread">
+          <img src="assets/images/avatar-angela-gray.webp" alt="Profile image" />
+          <div class="notification-content">
+            <p class="desc"><strong>Angela Gray </strong>followed you</p>
+            <span class="notification-time">5m ago</span>
+          </div>
+        </section>
+        <section class="notification-item unread">
+          <img src="assets/images/avatar-jacob-thompson.webp" alt="Profile image" />
+          <div class="notification-content">
+            <p class="desc">
+              <strong>Jacob Thompson </strong>has joined your group <a href="https://github.com/meryemctnky">Chess Club</a>
+            </p>
+            <span class="notification-time">1 day ago</span>
+          </div>
+        </section>
+        <section class="notification-item">
+          <img src="assets/images/avatar-rizky-hasanuddin.webp" alt="Profile image" />
+          <div class="notification-content">
+            <p class="desc"><strong>Rizky Hasanuddin </strong>sent you a private message</p>
+            <span class="notification-time">5 day ago</span>
+            <a href="#" id="message">
+              Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and I'm already having lots of fun and
+              improving my game.
+            </a>
+          </div>
+        </section>
+        <section class="notification-item">
+          <img src="assets/images/avatar-kimberly-smith.webp" alt="Profile image" />
+          <div class="notification-content">
+            <p class="desc"><strong>Kimberly Smith </strong>commented on your picture</p>
+            <span class="notification-time">1 week ago</span>
+          </div>
+          <img src="assets/images/image-chess.webp" id="chessImg" alt="chess image" />
+        </section>
+        <section class="notification-item">
+          <img src="assets/images/avatar-nathan-peterson.webp" alt="Profile image" />
+          <div class="notification-content">
+            <p class="desc">
+              <strong>Nathan Peterson </strong>reacted to your recent post <span>5 end-game strategies to increase your win rate</span>
+            </p>
+            <span class="notification-time">2 weeks ago</span>
+          </div>
+        </section>
+        <section class="notification-item">
+          <img src="assets/images/avatar-anna-kim.webp" alt="Profile image" />
+          <div class="notification-content">
+            <p class="desc"><strong>Anna Kim </strong>left the group <a href="https://github.com/meryemctnky">Chess Club</a></p>
+            <span class="notification-time">2 weeks ago</span>
+          </div>
+        </section>
+      </main>
+    </div>
+    <footer class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by
+      <a href="https://github.com/meryemctnky">Meryem Çetinkaya</a>.
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
 </html>
