@@ -8,27 +8,25 @@
     <title>Frontend Mentor | Interactive card details form</title>
   </head>
   <body>
-    <div class="container">
-      <div class="left-column"></div>
-      <div class="right-column">
-        <div class="cards">
-          <article class="front-card">
-            <img src="https://i.hizliresim.com/t3yv09n.png" alt="" class="logo" />
-
+    <main class="container">
+      <section class="left-column"></section>
+      <section class="right-column">
+        <article class="cards">
+          <div class="front-card">
+            <img src="./images/card-logo.svg" alt="" class="logo" />
             <div>
               <h2 id="card-number" class="card-number">0000 0000 0000 0000</h2>
-
               <ul class="card-name-section">
                 <li id="name" class="card-name">Jane Appleseed</li>
-                <li id="exp-date" class="card-name">00/00</li>
+                <li id="exp-date" class="card-name"><span id="exp-month">00</span>/<span id="exp-year">00</span></li>
               </ul>
             </div>
-          </article>
+          </div>
 
-          <article class="back-card">
+          <div class="back-card">
             <p id="card-cvc">123</p>
-          </article>
-        </div>
+          </div>
+        </article>
         <form id="credit-card-form">
           <div class="form-control">
             <label for="inputName">Cardholder Name</label>
@@ -37,7 +35,7 @@
           </div>
           <div class="form-control">
             <label for="inputCardNumber">Card Number</label>
-            <input type="text" id="inputCardNumber" name="inputCardNumber" placeholder="1234 5678 9012 3456" />
+            <input type="text" id="inputCardNumber" name="inputCardNumber" placeholder="1234 5678 9012 3456" maxlength="19" />
             <div id="numberErrorMessage" class="error-message">Wrong format, numbers only</div>
           </div>
           <div class="form-control-3">
@@ -45,30 +43,35 @@
               <div class="exp-date-label">Exp. Date (MM/YY)</div>
               <div class="exp-date-inputs">
                 <div class="exp-date-month">
-                  <input type="text" id="inputExpiryMonth" name="inputExpiryMonth" placeholder="MM" />
+                  <input type="text" id="inputExpiryMonth" name="inputExpiryMonth" placeholder="MM" maxlength="2" />
                   <div id="monthErrorMessage" class="error-message">Can't be blank</div>
                 </div>
                 <div class="exp-date-year">
-                  <input type="text" id="inputExpiryYear" name="inputExpiryYear" placeholder="YY" />
+                  <input type="text" id="inputExpiryYear" name="inputExpiryYear" placeholder="YY" maxlength="2" />
                   <div id="yearErrorMessage" class="error-message">Can't be blank</div>
                 </div>
               </div>
             </div>
             <div class="cvc-section">
               <label for="inputCvc">CVC</label>
-              <input type="text" id="inputCvc" name="inputCvc" placeholder="e.g. 123" />
+              <input type="text" id="inputCvc" name="inputCvc" placeholder="e.g. 123" maxlength="3" />
               <div id="cvcErrorMessage" class="error-message">Can't be blank</div>
             </div>
           </div>
           <button type="submit" id="confirmButton">Confirm</button>
         </form>
-        <div class="thanks-card">
+        <article id="thanks-card" class="thanks-card">
           <img src="images/icon-complete.svg" alt="complete icon" />
           <h2>Thank you!</h2>
           <p>We've added your card details</p>
-          <button type="button">Continue</button>
-        </div>
-      </div>
-    </div>
+          <button type="button" id="continueButton">Continue</button>
+        </article>
+        <footer class="attribution">
+          Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a> <br />
+          Coded by <a href="https://github.com/meryemctnky">Meryem Çetinkaya</a>
+        </footer>
+      </section>
+    </main>
+    <script src="js/main.js"></script>
   </body>
 </html>
