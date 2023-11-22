@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <nav class="navbar">
+        <div class="overlay"></div>
+        <div class="nav-logo">
+          <img src="images/logo.svg" alt="Snap logo" />
+        </div>
+        <button type="button" id="toggleButton">
+          <span class="navbar-toggler-icon"><img src="images/icon-menu.svg" alt="Menu icon" /></span>
+        </button>
+        <div class="offcanvas" id="offcanvas" tabindex="-1">
+          <div class="offcanvas-header">
+            <button type="button" id="closeButton">
+              <img src="images/icon-close-menu.svg" alt="Close icon" />
+            </button>
+          </div>
+          <div class="offcanvas-body">
+            <div class="menu">
+              <ul class="nav-links">
+                <li class="nav-item dropdown" id="featuresDropdown">
+                  <a class="nav-link" href="#"
+                    >Features
+                    <img id="featuresDropdownBtn" class="dropdown-toggle" src="images/icon-arrow-down.svg" alt="icon-arrow-down" />
+                  </a>
+                  <ul class="dropdown-menu" id="featuresDropdownMenu">
+                    <li class="dropdown-item">
+                      <img src="images/icon-todo.svg" alt="icon-todo" />
+                      <a class="sub-link" href="#">Todo List</a>
+                    </li>
+                    <li class="dropdown-item">
+                      <img src="images/icon-calendar.svg" alt="icon-calendar" />
+                      <a class="sub-link" href="#">Calendar</a>
+                    </li>
+                    <li class="dropdown-item">
+                      <img src="images/icon-reminders.svg" alt="icon-reminders" />
+                      <a class="sub-link" href="#">Reminders</a>
+                    </li>
+                    <li class="dropdown-item">
+                      <img src="images/icon-planning.svg" alt="icon-planning" />
+                      <a class="sub-link" href="#">Planning</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown" id="companyDropdown">
+                  <a class="nav-link" href="#"
+                    >Company
+                    <img id="companyDropdownBtn" class="dropdown-toggle" src="images/icon-arrow-down.svg" alt="icon-arrow-down" />
+                  </a>
+                  <ul class="dropdown-menu" id="companyDropdownMenu">
+                    <li class="dropdown-item"><a class="sub-link" href="#">History</a></li>
+                    <li class="dropdown-item"><a class="sub-link" href="#">Our Team</a></li>
+                    <li class="dropdown-item"><a class="sub-link" href="#">Blog</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="#">Careers</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+              </ul>
+            </div>
+            <div class="auth-buttons">
+              <button class="nav-item btn">Login</button>
+              <button class="nav-item btn btn-outline">Register</button>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="container">
+        <header class="header">
+          <div class="row">
+            <div class="col col-left">
+              <div class="main">
+                <h1 class="title">Make remote work</h1>
+                <p class="desc">
+                  Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.
+                </p>
+                <div>
+                  <button class="learn-btn" type="button">Learn more</button>
+                </div>
+              </div>
+              <div class="clients">
+                <div class="client-img">
+                  <img src="./images/client-databiz.svg" alt="databiz logo" />
+                </div>
+                <div class="client-img">
+                  <img src="./images/client-audiophile.svg" alt="audiophile logo" />
+                </div>
+                <div class="client-img">
+                  <img src="./images/client-meet.svg" alt="meet logo" />
+                </div>
+                <div class="client-img">
+                  <img src="./images/client-maker.svg" alt="maker logo" />
+                </div>
+              </div>
+            </div>
+            <div class="col col-right">
+              <picture>
+                <source media="(min-width: 768px)" srcset="images/image-hero-desktop.png" />
+                <img src="./images/image-hero-mobile.png" alt="Responsive Image Example" />
+              </picture>
+            </div>
+          </div>
+        </header>
+      </div>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
